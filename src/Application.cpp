@@ -175,8 +175,8 @@ int main(void)
         GLCall(glClear(GL_COLOR_BUFFER_BIT));
 
         // number of inidces
-        GLCall(glDrawElements(GL_TRIANGLES, 6, GL_INT, nullptr));
-        //GLCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
+        // for check an error GLCall(glDrawElements(GL_TRIANGLES, 6, GL_INT, nullptr));
+        GLCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
